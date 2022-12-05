@@ -1,0 +1,103 @@
+/* Css general */
+/* Mise à zero */
+*{
+    margin: 0;
+    padding: 0;
+} 
+/* Propietes de la page */
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+}
+
+/* Balise de la page web */
+.entete, #main, footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/* Contenu header */
+header{
+    display: flex;
+    flex-direction: column;
+    border-bottom:  1px grey solid;
+    height: 25vh;
+}
+
+
+header>nav{
+    width: 100vw;
+    background-color:black;
+    flex: 0 1 20%;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    height: 7vh;
+    align-items: center;
+}
+
+header>nav>a{
+    color: white;
+    text-decoration: none;
+}
+
+header>nav>a:hover{
+    color: orange;
+}
+
+header>.entete{
+    flex: 0 1 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>.entete>img{
+    display: block;
+    width: 221px;
+    height: 66px;
+}
+
+/* Contenu main */
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+#main>article{
+    display: flex;
+    flex: 0 1 20%; 
+    border: 1px grey solid; 
+    padding: 10px;  
+}
+
+#main>article:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+
+/* Contenu footer */
+footer{
+    display: flex;
+    flex-direction: row;  
+    color: white;
+    background-color: black;
+    border: 1px grey solid;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+footer>dl{
+    flex: 0 1 20%;
+}
+
+footer>dl>dt{
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+
+footer>#icones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
